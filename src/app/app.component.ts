@@ -13,5 +13,5 @@ export class AppComponent {
     console.log(this.signupForm);
     console.log('ulogovan');
   }
-
+  defaultSubscriptions='Advanced'
 }

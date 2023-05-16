@@ -19,13 +19,22 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-12">
-      <form ngSubmit="onSubmit" #f="ngForm"></form>
-      <label for="email">Email</label>
-      <input type="text" 
-      id="email"
-      class="form-control"
-      required
-      email>
+      <div>
+        <form ngSubmit="onSubmit" #f="ngForm"></form>
+        <label for="email">Email: </label>
+        <input type="text" id="email" class="form-control" ngModel required email>
+      </div>
+      <br>
+      <label for="subscriptions">Subscriptions: </label>
+      <select name="subscriptions" id="subscriptions" class="form-control" [ngModel]="defaultSubscriptions">
+        <option value="Basic">Basic</option>
+        <option value="Advanced">Advanced</option>
+        <option value="Pro">Pro</option>
+      </select>
+      <br>
+      <label for="password">Password: </label>
+      <input type="text" id="password" name="password" ngModel required>
+
 
 
     </div>
