@@ -44,22 +44,19 @@
             </p>
           </div>
           <span class="help-block" *ngIf="!f.valid && f.touched">Please enter a valid data</span>
-        <div>
-          <button class="btn btn-default" type="submit" (click)="onSubmit()" [disabled]="!f.valid">Submit</button>
-        </div>
-      </form>
+          <div>
+            <button class="btn btn-primary" type="submit" (click)="onSubmit()" [disabled]="!f.valid">Submit</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
 </div>
-        <div class="row" *ngIf="submited">
-          <div class="col-md-12">
-            <h3>Your data</h3>
-            <p>Email: {{user.email}} </p>
-            <p>Password: ****</p>
-            <p>Subscription: {{user.subscription}}</p>
-          </div>
-        </div>
-
-
-
+<div class="row" *ngIf="submited">
+  <div class="col-xs-12">
+    <h3>Your data</h3>
+    <p>Email: {{user.email}} </p>
+    <p>Password: ****</p>
+    <p>Subscription: {{user.subscription}}</p>
+  </div>
+</div>
